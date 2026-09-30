@@ -154,7 +154,11 @@ learning by building · prototyping · testing ideas
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=krishna3251&bg_color=00000000&color=64748b&line=94a3b8&point=ffffff&area=true&hide_border=true&custom_title=Contribution%20Flow" alt="Contribution activity graph" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions.dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/contributions.light.svg">
+  <img src="./assets/contributions.light.svg" alt="Contribution flow" width="100%">
+</picture>
 
 </div>
 
