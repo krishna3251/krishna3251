@@ -41,7 +41,7 @@ Right now: **AI orchestration, reliable bots, better interfaces**, and learning 
 _The first automatic refresh is being prepared. [View the workflow](https://github.com/krishna3251/krishna3251/actions/workflows/profile.yml)._
 <!-- ACTIVITY:END -->
 
-<details>
+<details open>
 <summary><b>A year of building · animated contribution trail</b></summary>
 <br />
 <a href="https://github.com/krishna3251"><img src="assets/contributions.gif" alt="Animated trail across Krishna's own GitHub contribution calendar. Cell brightness represents the contribution count, not animation intensity." width="100%" /></a>

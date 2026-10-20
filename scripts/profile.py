@@ -8,6 +8,7 @@ import argparse
 from collections import Counter
 from datetime import datetime, timezone
 from html import escape
+import hashlib
 import json
 import math
 import os
@@ -246,7 +247,12 @@ def render(data=None, output=ROOT):
     if data:
         (assets/'activity.json').write_text(json.dumps(data, indent=2)+'\n', encoding='utf-8')
         readme = output/'README.md'
-        readme.write_text(update_readme(readme.read_text(), activity_markdown(data)), encoding='utf-8')
+        content = update_readme(readme.read_text(), activity_markdown(data))
+        for filename in ['activity.svg', 'contributions.gif']:
+            fingerprint = hashlib.sha256((assets/filename).read_bytes()).hexdigest()[:12]
+            pattern = rf'src="assets/{re.escape(filename)}(?:\?v=[a-f0-9]+)?"'
+            content = re.sub(pattern, f'src="assets/{filename}?v={fingerprint}"', content)
+        readme.write_text(content, encoding='utf-8')
 
 
 def main():

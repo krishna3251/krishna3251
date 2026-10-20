@@ -106,7 +106,7 @@ class GraphicsTests(unittest.TestCase):
     def test_contribution_animation_uses_account_counts_and_preserves_snapshot(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            (root/'README.md').write_text('<!-- ACTIVITY:START -->\n<!-- ACTIVITY:END -->')
+            (root/'README.md').write_text('<img src="assets/activity.svg" /><img src="assets/contributions.gif" /><!-- ACTIVITY:START -->\n<!-- ACTIVITY:END -->')
             (root/'assets').mkdir()
             # Reuse the static hero; hourly runs must not re-encode it.
             (root/'assets/hero.gif').write_bytes(b'preserve-hero')
@@ -118,6 +118,8 @@ class GraphicsTests(unittest.TestCase):
                 self.assertGreater(image.n_frames, 1)
                 self.assertEqual(image.size, (1200,265))
             self.assertIn(data['updated_at'], (root/'README.md').read_text())
+            self.assertIn('assets/activity.svg?v=', (root/'README.md').read_text())
+            self.assertIn('assets/contributions.gif?v=', (root/'README.md').read_text())
 
     def test_pending_state_does_not_invent_stats(self):
         svg = profile.activity_svg(None)

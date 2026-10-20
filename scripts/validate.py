@@ -14,7 +14,7 @@ def validate(root=ROOT):
     assert 'platane/snk' not in readme.lower(), 'Contribution animation belongs to another account'
     assert not re.search(r'<(?:script|iframe|object|embed)\b', readme, re.I), 'Unsupported README embedding'
     for path in re.findall(r'src="(assets/[^"]+)"', readme):
-        target = root/path
+        target = root/path.split("?", 1)[0]
         assert target.is_file(), f'Missing image: {path}'
         assert target.stat().st_size < 2_000_000, f'Image is too large: {path}'
         if target.suffix == '.svg':
