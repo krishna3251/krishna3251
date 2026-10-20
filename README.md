@@ -1,181 +1,73 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&section=header&text=KRISHNA&fontSize=64&fontColor=ffffff&fontAlignY=42&animation=fadeIn&color=0:0f172a,45:111827,100:1e293b" alt="Krishna header" width="100%"/>
+<a href="https://github.com/krishna3251"><img src="assets/hero.gif" alt="Krishna — developer and thumbnail designer. AI systems, Discord bots, web experiences." width="100%" /></a>
 
-<h1>Building useful things from ideas, APIs & questionable amounts of curiosity.</h1>
+**BCA graduate · Developer · Thumbnail designer · India**
 
-<p>
-  <a href="https://github.com/krishna3251">
-    <img src="https://img.shields.io/badge/GitHub-krishna3251-111827?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-  <a href="mailto:krishnasoni3251@gmail.com">
-    <img src="https://img.shields.io/badge/Email-krishnasoni3251%40gmail.com-111827?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  <a href="https://www.instagram.com/krishna_sanskari69/">
-    <img src="https://img.shields.io/badge/Instagram-krishna__sanskari69-111827?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/>
-  </a>
-</p>
+I turn ideas into useful software—and gaming moments into visuals worth clicking.
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=94A3B8&center=true&vCenter=true&width=760&height=42&lines=AI+%E2%80%A2+Bots+%E2%80%A2+Full-Stack+%E2%80%A2+Automation;Turning+random+ideas+into+working+software;Learning+AI+engineering%2C+one+project+at+a+time" alt="Typing intro"/>
+[Projects](#selected-builds) &nbsp; / &nbsp; [Activity](#the-build-log) &nbsp; / &nbsp; [Stack](#the-toolkit) &nbsp; / &nbsp; [Connect](#lets-build-something)
+
+[![Profile refresh](https://github.com/krishna3251/krishna3251/actions/workflows/profile.yml/badge.svg?branch=main)](https://github.com/krishna3251/krishna3251/actions/workflows/profile.yml)
 
 </div>
 
-<br/>
+<br />
 
-<table>
-<tr>
-<td width="62%" valign="top">
+### The short version
 
-## 👋 About
+I’m **Krishna**. I build with Python, JavaScript and TypeScript, working across AI integrations, Discord automation and the web. On the visual side, I design cinematic gaming thumbnails with a focus on composition, lighting and character detail.
 
-I'm Krishna, a BCA developer focused on building **AI-powered tools, Discord bots, automation, and web projects**.
+Right now: **AI orchestration, reliable bots, better interfaces**, and learning by shipping. Gaming and anime keep the creative side busy.
 
-I like taking an idea from “this should probably exist” to an actual project that people can use. My current focus is moving deeper into **AI engineering, GenAI, APIs, backend systems, and modern full-stack development**.
+<br />
 
-### Current focus
+### Selected builds
 
-- 🤖 AI engineering & GenAI applications
-- 🧩 Discord / community automation
-- 🌐 Full-stack web development
-- 🛠️ Developer tooling & APIs
-- 📚 DSA and computer-science fundamentals
+| Project | What I’m building | Explore |
+| :--- | :--- | :--- |
+| **01 / Rukiya** | AI chat for Discord and YouTube Live, with orchestration, memory, provider routing and safety controls. | [Repository ↗](https://github.com/rukia3287-jpg/rukiya) |
+| **02 / Lxeus** | Discord community tools spanning moderation, utilities, chat and integrations. | [Repository ↗](https://github.com/krishna3251/lexus_dc) |
+| **03 / Server Builder** | A Discord server-building bot for reusable community setups. | [Repository ↗](https://github.com/krishna3251/server-builder-bot) |
+| **04 / Web experiments** | Portfolio layouts, responsive interfaces and ideas that become working web projects. | [Repository ↗](https://github.com/krishna3251/krish_pport) |
 
-</td>
-<td width="38%" valign="top">
+<br />
 
-## ⚡ Snapshot
+### The build log
 
-**Role**  
-BCA Developer
+<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg" alt="GitHub public repository statistics, repository languages, and recent updates. Generated from Krishna's account." width="100%" /></a>
 
-**Primary languages**  
-Python · TypeScript · JavaScript · Java · C++
+<!-- ACTIVITY:START -->
+_The first automatic refresh is being prepared. [View the workflow](https://github.com/krishna3251/krishna3251/actions/workflows/profile.yml)._
+<!-- ACTIVITY:END -->
 
-**Building**  
-AI tools · Bots · Web apps
+<details open>
+<summary><b>A year of building · animated contribution trail</b></summary>
+<br />
+<a href="https://github.com/krishna3251"><img src="assets/contributions.gif" alt="Animated trail across Krishna's own GitHub contribution calendar. Cell brightness represents the contribution count, not animation intensity." width="100%" /></a>
 
-**Interested in**  
-AI Engineering · Automation · Open Source
+The moving trail is decorative. The calendar cells and totals come from GitHub’s contribution data for this account.
+</details>
 
-**Based in**  
-India 🇮🇳
+<br />
 
-</td>
-</tr>
-</table>
+### The toolkit
 
----
+**Code** &nbsp; Python · TypeScript · JavaScript · HTML · CSS · SQL<br />
+**Systems** &nbsp; Discord bots · LLM APIs · orchestration · automation · SQLite<br />
+**Workflow** &nbsp; Git · GitHub · VS Code · API integrations<br />
+**Creative** &nbsp; Gaming thumbnails · cinematic composition · image editing
 
-## 🧰 Tech I Use
+<br />
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,typescript,javascript,java,cpp,html,css,nodejs,mysql,mongodb,sqlite,pytorch,numpy,git,github,cloudflare,gcp,vscode,figma&perline=9" alt="Technology stack"/>
-</p>
+### Let’s build something
 
----
+Have a bot idea, a web project, or a gaming thumbnail in mind?
 
-## 🚀 Things I Build
+**[Email ↗](mailto:krishnasoni3251@gmail.com)** &nbsp; · &nbsp; **[LinkedIn ↗](https://www.linkedin.com/in/krishna-soni-a00910279/)** &nbsp; · &nbsp; **[Instagram ↗](https://www.instagram.com/krishna_sanskari69/)**
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🤖 AI & Automation
-
-Building AI-assisted tools, API integrations, conversational systems, and automation workflows.
-
-**Focus:**  
-LLM APIs · orchestration · memory · provider routing · automation
-
-</td>
-<td width="50%" valign="top">
-
-### 💬 Bots & Community Tools
-
-Discord bots and community systems with moderation, utilities, chat, music, and automation features.
-
-**Focus:**  
-Python · APIs · moderation · integrations · scalable bot architecture
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🌐 Web Projects
-
-Interactive web experiences, portfolio work, utility apps, and experiments with modern frontend stacks.
-
-**Focus:**  
-TypeScript · JavaScript · responsive UI · APIs · GitHub Pages
-
-</td>
-<td width="50%" valign="top">
-
-### 🧪 Experiments
-
-Small projects are where the weird ideas go first. Some become tools. Some become lessons. Humanity survives another repo.
-
-**Focus:**  
-learning by building · prototyping · testing ideas
-
-</td>
-</tr>
-</table>
+<br />
 
 ---
 
-## 📊 GitHub Activity
-
-<div align="center">
-
-<table>
-<tr>
-<td width="50%">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=krishna3251&theme=transparent" alt="GitHub statistics" width="100%"/>
-
-</td>
-<td width="50%">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=krishna3251&theme=transparent" alt="Repositories by language" width="100%"/>
-
-</td>
-</tr>
-</table>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=krishna3251&theme=transparent" alt="GitHub contribution overview" width="100%"/>
-
-</div>
-
----
-
-
-## 🐍 Contribution Trail
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake animation" width="100%"/>
-
-</div>
-
----
-
-## 📫 Connect
-
-<p align="center">
-  <a href="https://github.com/krishna3251"><img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-  <a href="mailto:krishnasoni3251@gmail.com"><img src="https://img.shields.io/badge/Email-111827?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://www.instagram.com/krishna_sanskari69/"><img src="https://img.shields.io/badge/Instagram-111827?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
-  <a href="https://www.linkedin.com/in/krishna-soni-a00910279/"><img src="https://img.shields.io/badge/LinkedIn-111827?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-</p>
-
----
-
-<div align="center">
-
-### ✦ Build. Break. Learn. Repeat.
-
-<sub>Designed as a quiet, modern developer profile instead of a wall of badges.</sub>
-
-</div>
+<sub>Designed to stay useful. Built to keep moving. &nbsp; / &nbsp; <a href="docs/PROFILE.md">How the profile updates</a></sub>
