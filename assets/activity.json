@@ -2,6 +2,18 @@
   "login": "krishna3251",
   "repositories": [
     {
+      "name": "sri-sai-nath-",
+      "nameWithOwner": "krishna3251/sri-sai-nath-",
+      "url": "https://github.com/krishna3251/sri-sai-nath-",
+      "isFork": false,
+      "isArchived": false,
+      "stargazerCount": 0,
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-10-25T17:19:38Z"
+    },
+    {
       "name": "fruty",
       "nameWithOwner": "krishna3251/fruty",
       "url": "https://github.com/krishna3251/fruty",
@@ -11,7 +23,7 @@
       "primaryLanguage": {
         "name": "TypeScript"
       },
-      "pushedAt": "2026-10-25T11:28:39Z"
+      "pushedAt": "2026-10-25T16:41:24Z"
     },
     {
       "name": "krishna3251",
@@ -23,7 +35,7 @@
       "primaryLanguage": {
         "name": "Python"
       },
-      "pushedAt": "2026-10-25T09:50:17Z"
+      "pushedAt": "2026-10-25T14:24:02Z"
     },
     {
       "name": "rule-34",
@@ -203,7 +215,7 @@
     }
   ],
   "calendar": {
-    "totalContributions": 825,
+    "totalContributions": 861,
     "weeks": [
       {
         "contributionDays": [
@@ -2237,12 +2249,12 @@
         "contributionDays": [
           {
             "date": "2026-10-25",
-            "contributionCount": 9,
+            "contributionCount": 45,
             "weekday": 0
           }
         ]
       }
     ]
   },
-  "updated_at": "2026-10-25 14:24 UTC"
+  "updated_at": "2026-10-25 18:25 UTC"
 }
