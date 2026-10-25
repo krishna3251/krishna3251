@@ -2,6 +2,18 @@
   "login": "krishna3251",
   "repositories": [
     {
+      "name": "krishna3251",
+      "nameWithOwner": "krishna3251/krishna3251",
+      "url": "https://github.com/krishna3251/krishna3251",
+      "isFork": false,
+      "isArchived": false,
+      "stargazerCount": 0,
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-10-25T18:25:11Z"
+    },
+    {
       "name": "sri-sai-nath-",
       "nameWithOwner": "krishna3251/sri-sai-nath-",
       "url": "https://github.com/krishna3251/sri-sai-nath-",
@@ -24,18 +36,6 @@
         "name": "TypeScript"
       },
       "pushedAt": "2026-10-25T16:41:24Z"
-    },
-    {
-      "name": "krishna3251",
-      "nameWithOwner": "krishna3251/krishna3251",
-      "url": "https://github.com/krishna3251/krishna3251",
-      "isFork": false,
-      "isArchived": false,
-      "stargazerCount": 0,
-      "primaryLanguage": {
-        "name": "Python"
-      },
-      "pushedAt": "2026-10-25T14:24:02Z"
     },
     {
       "name": "rule-34",
@@ -2256,5 +2256,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-25 18:25 UTC"
+  "updated_at": "2026-10-25 21:49 UTC"
 }
