@@ -2,6 +2,18 @@
   "login": "krishna3251",
   "repositories": [
     {
+      "name": "porfolio-test-33",
+      "nameWithOwner": "krishna3251/porfolio-test-33",
+      "url": "https://github.com/krishna3251/porfolio-test-33",
+      "isFork": false,
+      "isArchived": false,
+      "stargazerCount": 1,
+      "primaryLanguage": {
+        "name": "CSS"
+      },
+      "pushedAt": "2026-10-26T19:01:35Z"
+    },
+    {
       "name": "krishna3251",
       "nameWithOwner": "krishna3251/krishna3251",
       "url": "https://github.com/krishna3251/krishna3251",
@@ -11,7 +23,7 @@
       "primaryLanguage": {
         "name": "Python"
       },
-      "pushedAt": "2026-10-26T06:16:53Z"
+      "pushedAt": "2026-10-26T13:18:01Z"
     },
     {
       "name": "sri-sai-nath-",
@@ -60,18 +72,6 @@
         "name": "Python"
       },
       "pushedAt": "2026-10-20T03:45:57Z"
-    },
-    {
-      "name": "porfolio-test-33",
-      "nameWithOwner": "krishna3251/porfolio-test-33",
-      "url": "https://github.com/krishna3251/porfolio-test-33",
-      "isFork": false,
-      "isArchived": false,
-      "stargazerCount": 1,
-      "primaryLanguage": {
-        "name": "CSS"
-      },
-      "pushedAt": "2026-10-19T18:33:09Z"
     },
     {
       "name": "lexus-lavalink",
@@ -2261,5 +2261,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-26 13:17 UTC"
+  "updated_at": "2026-10-26 19:57 UTC"
 }
