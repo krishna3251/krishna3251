@@ -2,18 +2,6 @@
   "login": "krishna3251",
   "repositories": [
     {
-      "name": "krishna3251",
-      "nameWithOwner": "krishna3251/krishna3251",
-      "url": "https://github.com/krishna3251/krishna3251",
-      "isFork": false,
-      "isArchived": false,
-      "stargazerCount": 0,
-      "primaryLanguage": {
-        "name": "Python"
-      },
-      "pushedAt": "2026-10-26T19:57:46Z"
-    },
-    {
       "name": "porfolio-test-33",
       "nameWithOwner": "krishna3251/porfolio-test-33",
       "url": "https://github.com/krishna3251/porfolio-test-33",
@@ -23,7 +11,19 @@
       "primaryLanguage": {
         "name": "CSS"
       },
-      "pushedAt": "2026-10-26T19:01:35Z"
+      "pushedAt": "2026-10-27T04:57:47Z"
+    },
+    {
+      "name": "krishna3251",
+      "nameWithOwner": "krishna3251/krishna3251",
+      "url": "https://github.com/krishna3251/krishna3251",
+      "isFork": false,
+      "isArchived": false,
+      "stargazerCount": 0,
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-10-26T23:55:22Z"
     },
     {
       "name": "sri-sai-nath-",
@@ -215,7 +215,7 @@
     }
   ],
   "calendar": {
-    "totalContributions": 861,
+    "totalContributions": 873,
     "weeks": [
       {
         "contributionDays": [
@@ -2256,10 +2256,15 @@
             "date": "2026-10-26",
             "contributionCount": 0,
             "weekday": 1
+          },
+          {
+            "date": "2026-10-27",
+            "contributionCount": 12,
+            "weekday": 2
           }
         ]
       }
     ]
   },
-  "updated_at": "2026-10-26 23:55 UTC"
+  "updated_at": "2026-10-27 05:09 UTC"
 }
