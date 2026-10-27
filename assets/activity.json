@@ -2,6 +2,18 @@
   "login": "krishna3251",
   "repositories": [
     {
+      "name": "krishna3251",
+      "nameWithOwner": "krishna3251/krishna3251",
+      "url": "https://github.com/krishna3251/krishna3251",
+      "isFork": false,
+      "isArchived": false,
+      "stargazerCount": 0,
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-10-27T05:09:03Z"
+    },
+    {
       "name": "porfolio-test-33",
       "nameWithOwner": "krishna3251/porfolio-test-33",
       "url": "https://github.com/krishna3251/porfolio-test-33",
@@ -12,18 +24,6 @@
         "name": "CSS"
       },
       "pushedAt": "2026-10-27T04:57:47Z"
-    },
-    {
-      "name": "krishna3251",
-      "nameWithOwner": "krishna3251/krishna3251",
-      "url": "https://github.com/krishna3251/krishna3251",
-      "isFork": false,
-      "isArchived": false,
-      "stargazerCount": 0,
-      "primaryLanguage": {
-        "name": "Python"
-      },
-      "pushedAt": "2026-10-26T23:55:22Z"
     },
     {
       "name": "sri-sai-nath-",
@@ -2266,5 +2266,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-27 05:09 UTC"
+  "updated_at": "2026-10-27 10:37 UTC"
 }
