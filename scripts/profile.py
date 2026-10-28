@@ -20,13 +20,13 @@ from urllib.request import Request, urlopen
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
-BG = '#0c1019'
-PANEL = '#121927'
-LINE = '#263244'
-WHITE = '#edf4fa'
-MUTED = '#94a7bc'
-MINT = '#a5f3cc'
-VIOLET = '#b9a0ff'
+BG = '#071525'
+PANEL = '#10283a'
+LINE = '#2c4c59'
+WHITE = '#f8f3e6'
+MUTED = '#a9bfc5'
+MINT = '#e9c27c'
+VIOLET = '#82d9d1'
 USER = 'krishna3251'
 QUERY = '''query Profile($login: String!, $cursor: String) {
   user(login: $login) {
@@ -105,44 +105,33 @@ def save_gif(frames, path, duration):
 
 
 def hero(path):
-    width, height = 1200, 410
-    base = Image.new('RGB', (width, height), BG)
+    """Create a cinematic loop from the committed illustration."""
+    base = Image.open(ROOT/'assets/krishna-art.jpg').convert('RGB')
     draw = ImageDraw.Draw(base)
-    # Architectural grid and restrained color wash; all text is present in frame one.
-    for x in range(0, width, 40):
-        draw.line((x, 0, x, height), fill='#111925')
-    for y in range(0, height, 40):
-        draw.line((0, y, width, y), fill='#111925')
-    draw.line((0, 0, width, 0), fill=MINT, width=3)
-    text(draw, (48, 35), 'KRISHNA3251  /  PERSONAL LAB', 15, MUTED, mono=True)
-    text(draw, (48, 82), 'KRISHNA', 89, WHITE, bold=True)
-    text(draw, (53, 197), 'Ideas into systems.', 32, MINT, bold=True)
-    text(draw, (53, 241), 'Pixels into stories.', 32, WHITE, bold=True)
-    labels = [('AI SYSTEMS', 53, 134), ('DISCORD BOTS', 202, 162), ('WEB + DESIGN', 379, 166)]
-    for label, left, size in labels:
-        rounded(draw, (left, 326, left+size, 363), fill='#151e2c', radius=6)
-        text(draw, (left+12, 337), label, 12, MUTED, mono=True)
-    text(draw, (1010, 365), 'BUILD / 01', 13, MUTED, mono=True)
-    # Orbital K monogram, data paths and moving particles.
-    cx, cy = 953, 192
-    for radius in [79, 112, 143]:
-        draw.ellipse((cx-radius, cy-radius, cx+radius, cy+radius), outline=LINE, width=1)
-    draw.line([(925, 148), (925, 232)], fill=WHITE, width=12)
-    draw.line([(980, 149), (936, 191), (985, 234)], fill=MINT, width=12)
+    # A dark text field keeps the lettering readable over the artwork.
+    overlay = Image.new('RGBA', base.size, (0, 0, 0, 0))
+    shade = ImageDraw.Draw(overlay)
+    for x in range(680):
+        alpha = int(155 * max(0, 1 - x / 680))
+        shade.line((x, 0, x, 410), fill=(2, 9, 23, alpha))
+    base = Image.alpha_composite(base.convert('RGBA'), overlay).convert('RGB')
+    draw = ImageDraw.Draw(base)
+    text(draw, (54, 44), 'KRISHNA3251  /  CREATIVE LAB', 15, '#e8c887', mono=True)
+    text(draw, (49, 94), 'KRISHNA', 78, '#fff7e8', bold=True)
+    draw.line((54, 199, 400, 199), fill='#d5a961', width=2)
+    text(draw, (54, 220), 'BUILD WITH PURPOSE.', 25, '#f2d294', bold=True)
+    text(draw, (54, 260), 'CREATE WITH IMAGINATION.', 22, '#d3e6ed', bold=True)
+    text(draw, (54, 350), 'AI  /  BOTS  /  WEB  /  DESIGN', 14, '#e8c887', mono=True)
     frames = []
     for frame in range(48):
         image = base.copy()
         d = ImageDraw.Draw(image)
         phase = frame / 48 * math.tau
-        for radius, offset, color in [(112, 0, MINT), (143, 2.2, VIOLET), (79, 4.0, WHITE)]:
-            for tail in range(10, -1, -1):
-                angle = phase + offset - tail*0.035
-                x, y = cx+math.cos(angle)*radius, cy+math.sin(angle)*radius
-                color_rgb = tuple(int(c * (0.25 + 0.75*(1-tail/11))) for c in rgb(color))
-                d.ellipse((x-3, y-3, x+3, y+3), fill=color_rgb)
-        x = 53 + int(frame/47*490)
-        d.line((53, 306, 545, 306), fill=LINE, width=2)
-        d.line((max(53, x-85), 306, x, 306), fill=MINT, width=2)
+        for x, y, offset in [(80, 314, 0), (252, 320, 1.4), (447, 69, 2.6), (545, 290, 4.1), (660, 85, 5.2)]:
+            glow = 0.5 + 0.5 * math.sin(phase + offset)
+            color = (int(110 + 145 * glow), int(85 + 115 * glow), int(50 + 75 * glow))
+            r = 1 + int(glow > 0.7)
+            d.ellipse((x-r, y-r, x+r, y+r), fill=color)
         frames.append(image)
     save_gif(frames, path, 100)
 
@@ -183,7 +172,7 @@ def contributions(data, path):
     weeks = calendar['weeks']
     text(d, (35, 227), f"{calendar['totalContributions']:,} contributions in the past year", 15, MUTED)
     text(d, (885, 227), 'KRISHNA3251 / GITHUB', 13, MUTED, mono=True)
-    colors = ['#1a2432', '#294c44', '#3c8065', '#6aba92', MINT]
+    colors = ['#182b3b', '#31514f', '#567c69', '#b2925a', MINT]
     coordinates = []
     for week_index, week in enumerate(weeks):
         for day in week['contributionDays']:

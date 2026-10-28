@@ -21,7 +21,7 @@ Only the publishing job requests `contents: write`. There are no added secrets a
 ## Edit and preview
 
 1. Edit the prose and project links in `README.md`. Leave the activity comment markers in place.
-2. Update colors and the hero drawing in `scripts/profile.py`. Delete `assets/hero.gif` and run the bootstrap command to redraw it.
+2. The illustrated hero source is `assets/krishna-art.jpg`; its text and animated lights are composed by `hero()` in `scripts/profile.py`. To rebuild the banner, delete `assets/hero.gif` and run the bootstrap command. Colors for the activity panels are also defined in the script.
 3. Install `requirements.txt`; the renderer uses Pillow and the DejaVu Sans/Mono fonts included on GitHub's Ubuntu runners.
 4. Run:
 
@@ -34,7 +34,7 @@ Only the publishing job requests `contents: write`. There are no added secrets a
    Bootstrap creates an honest pending state, without sample statistics. Do not use it to replace live assets unless intentionally resetting them.
 5. To regenerate using previously published public data, run `python scripts/profile.py --snapshot assets/activity.json`. Live refresh uses `GH_TOKEN` from the environment; never put a token in the README or a command argument.
 
-The banner is a seamless 4.8-second loop. Text is visible from the first frame; motion stays in the orbital mark and a thin progress accent. The contribution trail is decorative, while cell brightness reflects actual counts. The contribution animation starts expanded; visitors can collapse it. Alt text and ordinary Markdown preserve the profile's content if an image or animation cannot load.
+The banner is a seamless 4.8-second loop. Text is visible from the first frame; motion is limited to softly pulsing points of light over the illustration. The contribution trail is decorative, while cell brightness reflects actual counts. The contribution animation starts expanded; visitors can collapse it. Alt text and ordinary Markdown preserve the profile's content if an image or animation cannot load.
 
 GitHub applies its own Markdown layout and does not support a custom live JavaScript application inside a README. The design therefore uses standard images, links, a table and a details element, with no claim of embedded app-style interactivity.
 

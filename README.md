@@ -1,10 +1,12 @@
 <div align="center">
 
-<a href="https://github.com/krishna3251"><img src="assets/hero.gif" alt="Krishna — developer and thumbnail designer. AI systems, Discord bots, web experiences." width="100%" /></a>
+<a href="https://github.com/krishna3251"><img src="assets/hero.gif" alt="Cinematic anime illustration of Lord Krishna playing the flute under a moonlit sky, with the words Krishna: build with purpose, create with imagination." width="100%" /></a>
 
-**BCA graduate · Developer · Thumbnail designer · India**
+✦ &nbsp; **DEVELOPER** &nbsp; / &nbsp; **CREATOR** &nbsp; / &nbsp; **DREAMER** &nbsp; ✦
 
-I turn ideas into useful software—and gaming moments into visuals worth clicking.
+BCA graduate · India
+
+Building thoughtful AI systems, community tools and cinematic visuals.
 
 [Projects](#selected-builds) &nbsp; / &nbsp; [Activity](#the-build-log) &nbsp; / &nbsp; [Stack](#the-toolkit) &nbsp; / &nbsp; [Connect](#lets-build-something)
 
@@ -14,7 +16,7 @@ I turn ideas into useful software—and gaming moments into visuals worth clicki
 
 <br />
 
-### The short version
+### ✦ &nbsp; The story so far
 
 I’m **Krishna**. I build with Python, JavaScript and TypeScript, working across AI integrations, Discord automation and the web. On the visual side, I design cinematic gaming thumbnails with a focus on composition, lighting and character detail.
 
@@ -22,7 +24,7 @@ Right now: **AI orchestration, reliable bots, better interfaces**, and learning 
 
 <br />
 
-### Selected builds
+### ⚔️ &nbsp; Selected builds
 
 | Project | What I’m building | Explore |
 | :--- | :--- | :--- |
@@ -33,9 +35,9 @@ Right now: **AI orchestration, reliable bots, better interfaces**, and learning 
 
 <br />
 
-### The build log
+### ✧ &nbsp; The build log
 
-<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=c79bf2f3fa50" alt="GitHub public repository statistics, repository languages, and recent updates. Generated from Krishna's account." width="100%" /></a>
+<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=ee796333e69d" alt="GitHub public repository statistics, repository languages, and recent updates. Generated from Krishna's account." width="100%" /></a>
 
 <!-- ACTIVITY:START -->
 <sub>Last successful refresh: **2026-10-28 08:36 UTC** · hourly + profile updates · public data only</sub>
@@ -51,14 +53,14 @@ Right now: **AI orchestration, reliable bots, better interfaces**, and learning 
 <details open>
 <summary><b>A year of building · animated contribution trail</b></summary>
 <br />
-<a href="https://github.com/krishna3251"><img src="assets/contributions.gif?v=b6d0f6ae1467" alt="Animated trail across Krishna's own GitHub contribution calendar. Cell brightness represents the contribution count, not animation intensity." width="100%" /></a>
+<a href="https://github.com/krishna3251"><img src="assets/contributions.gif?v=6819e88c6ea6" alt="Animated trail across Krishna's own GitHub contribution calendar. Cell brightness represents the contribution count, not animation intensity." width="100%" /></a>
 
 The moving trail is decorative. The calendar cells and totals come from GitHub’s contribution data for this account.
 </details>
 
 <br />
 
-### The toolkit
+### 🪶 &nbsp; The toolkit
 
 **Code** &nbsp; Python · TypeScript · JavaScript · HTML · CSS · SQL<br />
 **Systems** &nbsp; Discord bots · LLM APIs · orchestration · automation · SQLite<br />
@@ -67,7 +69,7 @@ The moving trail is decorative. The calendar cells and totals come from GitHub�
 
 <br />
 
-### Let’s build something
+### ✨ &nbsp; Let’s build something
 
 Have a bot idea, a web project, or a gaming thumbnail in mind?
 
@@ -77,4 +79,4 @@ Have a bot idea, a web project, or a gaming thumbnail in mind?
 
 ---
 
-<sub>Designed to stay useful. Built to keep moving. &nbsp; / &nbsp; <a href="docs/PROFILE.md">How the profile updates</a></sub>
+<sub>Create with imagination. Build with purpose. &nbsp; / &nbsp; <a href="docs/PROFILE.md">How the profile updates</a></sub>
