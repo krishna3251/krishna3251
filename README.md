@@ -37,10 +37,10 @@ Right now: **AI orchestration, reliable bots, better interfaces**, and learning 
 
 ### ✧ &nbsp; The build log
 
-<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=a38caf7830e6" alt="GitHub public repository statistics, repository languages, and recent updates. Generated from Krishna's account." width="100%" /></a>
+<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=93c303da3f88" alt="GitHub public repository statistics, repository languages, and recent updates. Generated from Krishna's account." width="100%" /></a>
 
 <!-- ACTIVITY:START -->
-<sub>Last successful refresh: **2026-10-28 21:07 UTC** · hourly + profile updates · public data only</sub>
+<sub>Last successful refresh: **2026-10-29 00:59 UTC** · hourly + profile updates · public data only</sub>
 
 | Recently pushed repository | Latest push · UTC |
 | :--- | :--- |
@@ -53,7 +53,7 @@ Right now: **AI orchestration, reliable bots, better interfaces**, and learning 
 <details open>
 <summary><b>A year of building · animated contribution trail</b></summary>
 <br />
-<a href="https://github.com/krishna3251"><img src="assets/contributions.gif?v=48a7d0793584" alt="Animated trail across Krishna's own GitHub contribution calendar. Cell brightness represents the contribution count, not animation intensity." width="100%" /></a>
+<a href="https://github.com/krishna3251"><img src="assets/contributions.gif?v=6052acc79999" alt="Animated trail across Krishna's own GitHub contribution calendar. Cell brightness represents the contribution count, not animation intensity." width="100%" /></a>
 
 The moving trail is decorative. The calendar cells and totals come from GitHub’s contribution data for this account.
 </details>
