@@ -2,6 +2,18 @@
   "login": "krishna3251",
   "repositories": [
     {
+      "name": "krishna3251",
+      "nameWithOwner": "krishna3251/krishna3251",
+      "url": "https://github.com/krishna3251/krishna3251",
+      "isFork": false,
+      "isArchived": false,
+      "stargazerCount": 0,
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-11-01T19:42:52Z"
+    },
+    {
       "name": "porfolio-test-33",
       "nameWithOwner": "krishna3251/porfolio-test-33",
       "url": "https://github.com/krishna3251/porfolio-test-33",
@@ -12,18 +24,6 @@
         "name": "CSS"
       },
       "pushedAt": "2026-11-01T18:57:02Z"
-    },
-    {
-      "name": "krishna3251",
-      "nameWithOwner": "krishna3251/krishna3251",
-      "url": "https://github.com/krishna3251/krishna3251",
-      "isFork": false,
-      "isArchived": false,
-      "stargazerCount": 0,
-      "primaryLanguage": {
-        "name": "Python"
-      },
-      "pushedAt": "2026-11-01T15:12:25Z"
     },
     {
       "name": "fruty",
@@ -2256,5 +2256,5 @@
       }
     ]
   },
-  "updated_at": "2026-11-01 19:42 UTC"
+  "updated_at": "2026-11-01 23:37 UTC"
 }
