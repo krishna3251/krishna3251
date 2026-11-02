@@ -71,6 +71,9 @@ class DataTests(unittest.TestCase):
         self.assertNotIn('archived', output)
         self.assertNotIn(f'](https://github.com/{profile.USER}/{profile.USER})', output)
         self.assertIn('Latest push', output)
+        self.assertIn('**Public owned repositories:** 4', output)
+        self.assertIn('**Stars on owned repositories:** 8', output)
+        self.assertIn('**Contributions in GitHub\'s calendar period:** 7', output)
         self.assertIn(r'\[x\]', profile.markdown_label('[x]'))
         data['repositories'] = [repo('../unsafe')]
         with self.assertRaises(ValueError):
@@ -120,6 +123,38 @@ class GraphicsTests(unittest.TestCase):
             self.assertIn(data['updated_at'], (root/'README.md').read_text())
             self.assertIn('assets/activity.svg?v=', (root/'README.md').read_text())
             self.assertIn('assets/contributions.gif?v=', (root/'README.md').read_text())
+
+    def test_other_accounts_are_rejected_before_writing(self):
+        data = snapshot()
+        data['login'] = 'someone-else'
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            with self.assertRaises(ValueError):
+                profile.render(data, output=root)
+            self.assertFalse((root/'assets').exists())
+
+    def test_language_distribution_includes_all_non_fork_languages(self):
+        data = snapshot()
+        data['repositories'] += [repo(f'lang{i}', language=f'Language{i}') for i in range(7)]
+        output = profile.activity_markdown(data)
+        for i in range(7):
+            self.assertIn(f'Language{i}: 1', output)
+        self.assertNotIn('JavaScript: 1', output)
+
+    def test_calendar_cells_keep_their_count_colors_across_frames(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory)/'calendar.gif'
+            profile.contributions(snapshot(), path)
+            with Image.open(path) as image:
+                self.assertGreater(image.n_frames, 1)
+                # Centers remain untouched by the moving outlines.
+                first = image.convert('RGB')
+                samples = [first.getpixel((49, 79+i*19)) for i in range(3)]
+                self.assertEqual(len(set(samples)), 3)
+                for frame in range(image.n_frames):
+                    image.seek(frame)
+                    current = image.convert('RGB')
+                    self.assertEqual(samples, [current.getpixel((49, 79+i*19)) for i in range(3)])
 
     def test_pending_state_does_not_invent_stats(self):
         svg = profile.activity_svg(None)
