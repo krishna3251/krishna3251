@@ -1,43 +1,33 @@
 <div align="center">
 
-<a href="https://github.com/krishna3251"><img src="assets/hero.gif" alt="Cinematic anime illustration of Lord Krishna playing the flute under a moonlit sky, with the words Krishna: build with purpose, create with imagination." width="100%" /></a>
+<a href="https://github.com/krishna3251"><img src="assets/hero.gif" alt="KRISHNA — Captain of the Code Seas. Developer, AI systems, Discord bots, web and creative design. A pirate ship sails across a sunlit ocean." width="100%" /></a>
 
-✦ &nbsp; **DEVELOPER** &nbsp; / &nbsp; **CREATOR** &nbsp; / &nbsp; **DREAMER** &nbsp; ✦
-
+**Developer · AI systems · Discord bots · Web & creative design**<br />
 BCA graduate · India
 
-Building thoughtful AI systems, community tools and cinematic visuals.
-
-[Projects](#selected-builds) &nbsp; / &nbsp; [Activity](#the-build-log) &nbsp; / &nbsp; [Stack](#the-toolkit) &nbsp; / &nbsp; [Connect](#lets-build-something)
+[Captain’s log](#captains-log) · [Bounty dashboard](#world-government-bounty-dashboard) · [Fleet](#pirate-fleet) · [Join my crew](#join-my-crew)
 
 [![Profile refresh](https://github.com/krishna3251/krishna3251/actions/workflows/profile.yml/badge.svg?branch=main)](https://github.com/krishna3251/krishna3251/actions/workflows/profile.yml)
 
 </div>
 
-<br />
+## Captain’s log
 
-### ✦ &nbsp; The story so far
+<img src="assets/one-piece/harbor-divider.jpg" alt="A sunlit harbor with a Straw Hat ship and Krishna-inspired details." width="100%" />
 
-I’m **Krishna**. I build with Python, JavaScript and TypeScript, working across AI integrations, Discord automation and the web. On the visual side, I design cinematic gaming thumbnails with a focus on composition, lighting and character detail.
+<div align="center"><img src="assets/one-piece/captain-map.png" alt="Krishna's pirate captain holding a treasure map." width="260" /></div>
 
-Right now: **AI orchestration, reliable bots, better interfaces**, and learning by shipping. Gaming and anime keep the creative side busy.
+I’m **Krishna**, a BCA graduate from India building AI-powered systems, Discord bots, websites and creative digital experiences. I enjoy connecting practical automation with thoughtful interfaces, and designing cinematic gaming thumbnails with attention to composition, lighting and character detail.
 
-<br />
+My interests include programming, anime, gaming and AI integrations. Currently exploring AI orchestration, community tools and responsive web experiences.
 
-### ⚔️ &nbsp; Selected builds
+## World Government bounty dashboard
 
-| Project | What I’m building | Explore |
-| :--- | :--- | :--- |
-| **01 / Rukiya** | AI chat for Discord and YouTube Live, with orchestration, memory, provider routing and safety controls. | [Repository ↗](https://github.com/rukia3287-jpg/rukiya) |
-| **02 / Lxeus** | Discord community tools spanning moderation, utilities, chat and integrations. | [Repository ↗](https://github.com/krishna3251/lexus_dc) |
-| **03 / Server Builder** | A Discord server-building bot for reusable community setups. | [Repository ↗](https://github.com/krishna3251/server-builder-bot) |
-| **04 / Web experiments** | Portfolio layouts, responsive interfaces and ideas that become working web projects. | [Repository ↗](https://github.com/krishna3251/krish_pport) |
+<div align="center"><img src="assets/one-piece/wanted-poster.jpg" alt="Decorative wanted poster of Krishna, with a fictional pirate bounty." width="340" /></div>
 
-<br />
+The bounty is **fictional**. The public GitHub figures below come from this account’s latest successful refresh. Repository language counts describe primary languages of owned non-fork repositories; they are not a measure of proficiency.
 
-### ✧ &nbsp; The build log
-
-<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=b9015d0dc8a7" alt="GitHub public repository statistics, repository languages, and recent updates. Generated from Krishna's account." width="100%" /></a>
+<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=43b086413e83" alt="Public owned repositories, stars, contributions, repository languages and last successful refresh." width="100%" /></a>
 
 <!-- ACTIVITY:START -->
 <sub>Last successful refresh: **2026-11-01 23:37 UTC** · hourly + profile updates · public data only</sub>
@@ -48,35 +38,39 @@ Right now: **AI orchestration, reliable bots, better interfaces**, and learning 
 | [fruty](https://github.com/krishna3251/fruty) | 2026-10-29 · 09:49 |
 | [sri-sai-nath-](https://github.com/krishna3251/sri-sai-nath-) | 2026-10-26 · 05:18 |
 | [rule-34](https://github.com/krishna3251/rule-34) | 2026-10-20 · 15:01 |
+
+**Primary languages across owned non-fork repositories:** Python: 6 · TypeScript: 6 · CSS: 3 · Dockerfile: 1
 <!-- ACTIVITY:END -->
 
-<details open>
-<summary><b>A year of building · animated contribution trail</b></summary>
-<br />
-<a href="https://github.com/krishna3251"><img src="assets/contributions.gif?v=d310404a3862" alt="Animated trail across Krishna's own GitHub contribution calendar. Cell brightness represents the contribution count, not animation intensity." width="100%" /></a>
+## Devil fruit tech system
 
-The moving trail is decorative. The calendar cells and totals come from GitHub’s contribution data for this account.
-</details>
+<img src="assets/one-piece/devil-fruit.svg" alt="Python, JavaScript, TypeScript, HTML, CSS, SQL, Git and GitHub around a decorative devil fruit." width="100%" />
 
-<br />
+**Code:** Python · JavaScript · TypeScript · HTML · CSS · SQL<br />
+**Tools:** Git · GitHub<br />
+**Interests:** AI and automation · Discord development · web development · creative design
 
-### 🪶 &nbsp; The toolkit
+## Pirate fleet
 
-**Code** &nbsp; Python · TypeScript · JavaScript · HTML · CSS · SQL<br />
-**Systems** &nbsp; Discord bots · LLM APIs · orchestration · automation · SQLite<br />
-**Workflow** &nbsp; Git · GitHub · VS Code · API integrations<br />
-**Creative** &nbsp; Gaming thumbnails · cinematic composition · image editing
+<img src="assets/one-piece/project-fleet.jpg" alt="Three pirate ships on a golden ocean, representing Krishna's project fleet." width="100%" />
 
-<br />
+- **[Rukiya](https://github.com/rukia3287-jpg/rukiya)** — AI chatbot with orchestration and Discord / YouTube Live functionality.
+- **[Lxeus](https://github.com/krishna3251/lexus_dc)** — Discord community bot with moderation, utilities and integrations.
+- **[Web experiments](https://github.com/krishna3251/krish_pport)** — responsive interfaces, animated websites and modern web development.
+- **[Server Builder](https://github.com/krishna3251/server-builder-bot)** — a Discord bot for building community setups.
 
-### ✨ &nbsp; Let’s build something
+## Grand line of contributions
+
+<a href="https://github.com/krishna3251"><img src="assets/contributions.gif?v=9bb416230255" alt="Krishna's GitHub contribution calendar as an animated sea chart. Cell colors represent contribution counts; the moving outline is decorative." width="100%" /></a>
+
+The chart uses this account’s GitHub contribution calendar; the moving trail is decorative. The legend shows increasing activity, and the date range and total are printed on the chart. Data is refreshed hourly when the workflow succeeds.
+
+## Join my crew
+
+<img src="assets/one-piece/crew-footer.jpg" alt="Pirate captain pointing toward Join My Crew on a sunset harbor." width="100%" />
 
 Have a bot idea, a web project, or a gaming thumbnail in mind?
 
-**[Email ↗](mailto:krishnasoni3251@gmail.com)** &nbsp; · &nbsp; **[LinkedIn ↗](https://www.linkedin.com/in/krishna-soni-a00910279/)** &nbsp; · &nbsp; **[Instagram ↗](https://www.instagram.com/krishna_sanskari69/)**
+**[GitHub](https://github.com/krishna3251)** · **[LinkedIn](https://www.linkedin.com/in/krishna-soni-a00910279/)** · **[Instagram](https://www.instagram.com/krishna_sanskari69/)** · **[Email](mailto:krishnasoni3251@gmail.com)**
 
-<br />
-
----
-
-<sub>Create with imagination. Build with purpose. &nbsp; / &nbsp; <a href="docs/PROFILE.md">How the profile updates</a></sub>
+<sub><a href="docs/PROFILE.md">How this profile updates</a></sub>

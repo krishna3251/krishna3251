@@ -17,7 +17,7 @@ import re
 import sys
 from urllib.request import Request, urlopen
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 BG = '#071525'
@@ -98,42 +98,39 @@ def text(draw, xy, value, size=18, fill=WHITE, bold=False, mono=False):
 
 def save_gif(frames, path, duration):
     # Shared palette keeps text and gradients steady across frames.
-    palette = frames[0].quantize(colors=128)
+    palette = frames[0].quantize(colors=256)
     converted = [frame.quantize(palette=palette, dither=Image.Dither.NONE) for frame in frames]
     converted[0].save(path, save_all=True, append_images=converted[1:], loop=0,
                       duration=duration, optimize=True, disposal=1)
 
 
 def hero(path):
-    """Create a cinematic loop from the committed illustration."""
-    base = Image.open(ROOT/'assets/krishna-art.jpg').convert('RGB')
-    draw = ImageDraw.Draw(base)
-    # A dark text field keeps the lettering readable over the artwork.
-    overlay = Image.new('RGBA', base.size, (0, 0, 0, 0))
+    """Compose a restrained loop from the user's ocean illustration, once."""
+    source = Image.open(ROOT/'assets/one-piece/hero-ocean.jpg').convert('RGB')
+    base = ImageOps.fit(source, (1200, 410), method=Image.Resampling.LANCZOS)
+    overlay = Image.new('RGBA', base.size)
     shade = ImageDraw.Draw(overlay)
-    for x in range(680):
-        alpha = int(155 * max(0, 1 - x / 680))
-        shade.line((x, 0, x, 410), fill=(2, 9, 23, alpha))
+    for x in range(750):
+        shade.line((x, 0, x, 410), fill=(2, 13, 31, int(180 * max(0, 1-x/750))))
     base = Image.alpha_composite(base.convert('RGBA'), overlay).convert('RGB')
-    draw = ImageDraw.Draw(base)
-    text(draw, (54, 44), 'KRISHNA3251  /  CREATIVE LAB', 15, '#e8c887', mono=True)
-    text(draw, (49, 94), 'KRISHNA', 78, '#fff7e8', bold=True)
-    draw.line((54, 199, 400, 199), fill='#d5a961', width=2)
-    text(draw, (54, 220), 'BUILD WITH PURPOSE.', 25, '#f2d294', bold=True)
-    text(draw, (54, 260), 'CREATE WITH IMAGINATION.', 22, '#d3e6ed', bold=True)
-    text(draw, (54, 350), 'AI  /  BOTS  /  WEB  /  DESIGN', 14, '#e8c887', mono=True)
+    d = ImageDraw.Draw(base)
+    text(d, (48, 56), 'THE GRAND LINE / DEVELOPER PROFILE', 15, '#f4d99d', mono=True)
+    text(d, (42, 104), 'KRISHNA', 76, '#fff1c8', bold=True)
+    d.line((49, 211, 512, 211), fill='#e9c27c', width=2)
+    text(d, (48, 230), 'CAPTAIN OF THE CODE SEAS', 23, '#ffe5a1', bold=True)
+    text(d, (48, 292), 'Developer  •  AI Systems  •  Discord Bots', 17, '#f8f3e6')
+    text(d, (48, 321), 'Web & Creative Design', 17, '#f8f3e6')
     frames = []
-    for frame in range(48):
+    for frame in range(16):
         image = base.copy()
-        d = ImageDraw.Draw(image)
-        phase = frame / 48 * math.tau
-        for x, y, offset in [(80, 314, 0), (252, 320, 1.4), (447, 69, 2.6), (545, 290, 4.1), (660, 85, 5.2)]:
+        draw = ImageDraw.Draw(image)
+        phase = frame / 16 * math.tau
+        for x, y, offset in [(75, 368, 0), (236, 365, 1.4), (454, 75, 2.6), (550, 355, 4.1)]:
             glow = 0.5 + 0.5 * math.sin(phase + offset)
-            color = (int(110 + 145 * glow), int(85 + 115 * glow), int(50 + 75 * glow))
-            r = 1 + int(glow > 0.7)
-            d.ellipse((x-r, y-r, x+r, y+r), fill=color)
+            color = (int(140 + 100*glow), int(115 + 95*glow), int(70 + 85*glow))
+            draw.ellipse((x-2, y-2, x+2, y+2), fill=color)
         frames.append(image)
-    save_gif(frames, path, 100)
+    save_gif(frames, path, 160)
 
 
 def svg_text(x, y, value, size=18, fill=WHITE, weight=400, extra=''):
@@ -148,21 +145,22 @@ def activity_svg(data):
     originals = [repo for repo in repos if not repo['isFork']]
     languages = Counter(repo['primaryLanguage']['name'] for repo in originals if repo['primaryLanguage'])
     total = data['calendar']['totalContributions']
-    parts = [header, svg_text(36, 41, 'GITHUB / PUBLIC SIGNAL', 16, MINT, 600), svg_text(1164, 41, data['updated_at'], 13, MUTED, extra='text-anchor="end"')]
+    parts = [header, svg_text(36, 41, 'WORLD GOVERNMENT / PUBLIC RECORD', 16, MINT, 600), svg_text(1164, 41, data['updated_at'], 13, MUTED, extra='text-anchor="end"')]
     metrics = [(len(repos), 'PUBLIC REPOSITORIES'), (sum(r['stargazerCount'] for r in repos), 'STARS ON OWNED REPOS'), (total, 'CONTRIBUTIONS / PAST YEAR')]
     for index, (number, label) in enumerate(metrics):
         left = 36 + index*385
         parts += [f'<rect x="{left}" y="65" width="358" height="122" rx="12" fill="{PANEL}" stroke="{LINE}"/>', svg_text(left+20, 122, f'{number:,}', 42, WHITE, 700), svg_text(left+20, 157, label, 12, MUTED)]
-    parts.append(svg_text(36, 222, 'REPOSITORY LANGUAGES', 12, MUTED, 600))
+    parts.append(svg_text(36, 222, 'TOP REPOSITORY LANGUAGES / NON-FORKS', 12, MUTED, 600))
     parts.append(svg_text(36, 259, '  /  '.join(f'{language} · {count}' for language, count in languages.most_common(5)) or 'No primary language data yet', 18, VIOLET))
     return ''.join(parts) + '</g></svg>'
 
 
 def contributions(data, path):
+    """Draw the real account calendar as a sea chart; motion never changes cell fills."""
     width, height = 1200, 265
     base = Image.new('RGB', (width, height), BG)
     d = ImageDraw.Draw(base)
-    text(d, (35, 22), 'A YEAR OF BUILDING', 18, MINT, bold=True, mono=True)
+    text(d, (35, 16), 'GRAND LINE / CONTRIBUTION SEA CHART', 18, MINT, bold=True, mono=True)
     if not data:
         text(d, (35, 98), 'Waiting for your first GitHub Actions refresh.', 27)
         text(d, (35, 154), 'Your account. Your contributions. No invented activity.', 18, MUTED)
@@ -170,29 +168,46 @@ def contributions(data, path):
         return
     calendar = data['calendar']
     weeks = calendar['weeks']
-    text(d, (35, 227), f"{calendar['totalContributions']:,} contributions in the past year", 15, MUTED)
-    text(d, (885, 227), 'KRISHNA3251 / GITHUB', 13, MUTED, mono=True)
-    colors = ['#182b3b', '#31514f', '#567c69', '#b2925a', MINT]
+    colors = ['#182b3b', '#176477', '#2a9a9b', '#bb9954', '#f2d184']
+    for label, weekday in [('Mon', 1), ('Wed', 3), ('Fri', 5)]:
+        text(d, (8, 72+weekday*19), label, 11, MUTED)
     coordinates = []
+    previous_month = ''
+    dates = []
     for week_index, week in enumerate(weeks):
         for day in week['contributionDays']:
-            x, y = 36+week_index*21, 69+day['weekday']*20
+            date = day['date']
+            dates.append(date)
+            x, y = 42+week_index*21, 72+day['weekday']*19
+            month = date[:7]
+            if month != previous_month:
+                # Months are placed on the first week containing the new month.
+                label = datetime.strptime(date, '%Y-%m-%d').strftime('%b')
+                text(d, (x, 50), label, 11, MUTED)
+                previous_month = month
             count = day['contributionCount']
             level = 0 if not count else min(4, 1+int(math.log2(count)))
-            d.rounded_rectangle((x,y,x+15,y+14), 3, fill=colors[level])
+            d.rounded_rectangle((x, y, x+15, y+14), 3, fill=colors[level])
             coordinates.append((x, y))
+    if dates:
+        text(d, (35, 226), f"{calendar['totalContributions']:,} contributions  |  {min(dates)} to {max(dates)}", 13, MUTED)
+    text(d, (875, 226), 'Less', 12, MUTED)
+    for i, color in enumerate(colors):
+        d.rounded_rectangle((915+i*21, 228, 929+i*21, 242), 3, fill=color)
+    text(d, (1028, 226), 'More', 12, MUTED)
+    if not coordinates:
+        base.save(path, format='GIF')
+        return
     frames = []
-    # A decorative scanning trail; data cells remain untouched underneath it.
+    # Outlines travel over cells; their underlying count-derived fills stay fixed.
     for frame in range(56):
         image = base.copy()
         draw = ImageDraw.Draw(image)
         head = int(frame/56*len(coordinates))
-        for step in range(8):
-            x,y = coordinates[(head-step) % len(coordinates)]
-            if step == 0:
-                draw.rounded_rectangle((x-1,y-1,x+16,y+15), 4, outline=WHITE, width=2)
-            else:
-                draw.rounded_rectangle((x,y,x+15,y+14), 3, outline=VIOLET, width=1)
+        for step in range(min(8, len(coordinates))):
+            x, y = coordinates[(head-step) % len(coordinates)]
+            draw.rounded_rectangle((x-1, y-1, x+16, y+15), 4,
+                                   outline=WHITE if step == 0 else VIOLET, width=1)
         frames.append(image)
     save_gif(frames, path, 100)
 
@@ -213,6 +228,9 @@ def activity_markdown(data):
         lines.append(f"| [{markdown_label(repo['name'])}](https://github.com/{target}) | {repo['pushedAt'][:16].replace('T', ' · ')} |")
     if not repos:
         lines.append('| No public pushes available yet | — |')
+    languages = Counter(r['primaryLanguage']['name'] for r in data['repositories'] if not r['isFork'] and r['primaryLanguage'])
+    distribution = ' · '.join(f'{markdown_label(name)}: {count}' for name, count in languages.most_common()) or 'No primary language data yet'
+    lines += ['', '**Primary languages across owned non-fork repositories:** ' + distribution]
     return '\n'.join(lines)
 
 
@@ -226,6 +244,8 @@ def update_readme(content, generated):
 
 
 def render(data=None, output=ROOT):
+    if data and data.get('login', '').lower() != USER.lower():
+        raise ValueError('Snapshot belongs to a different account')
     assets = output/'assets'
     assets.mkdir(parents=True, exist_ok=True)
     # Hero is data-independent and committed once, not re-encoded every hour.

@@ -9,6 +9,7 @@ on:
     paths:
       - README.md
       - scripts/**
+      - assets/one-piece/**
       - tests/**
       - requirements.txt
       - .github/workflows/profile.yml
