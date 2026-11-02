@@ -105,30 +105,33 @@ def save_gif(frames, path, duration):
 
 
 def hero(path):
-    """Compose a restrained loop from the user's ocean illustration, once."""
+    """Compose a data-independent, subtle light loop over the ocean artwork."""
     source = Image.open(ROOT/'assets/one-piece/hero-ocean.jpg').convert('RGB')
     base = ImageOps.fit(source, (1200, 410), method=Image.Resampling.LANCZOS)
     overlay = Image.new('RGBA', base.size)
     shade = ImageDraw.Draw(overlay)
-    for x in range(750):
-        shade.line((x, 0, x, 410), fill=(2, 13, 31, int(180 * max(0, 1-x/750))))
+    for x in range(780):
+        shade.line((x, 0, x, 410), fill=(2, 13, 31, int(190 * max(0, 1-x/780))))
     base = Image.alpha_composite(base.convert('RGBA'), overlay).convert('RGB')
-    d = ImageDraw.Draw(base)
-    text(d, (48, 56), 'THE GRAND LINE / DEVELOPER PROFILE', 15, '#f4d99d', mono=True)
-    text(d, (42, 104), 'KRISHNA', 76, '#fff1c8', bold=True)
-    d.line((49, 211, 512, 211), fill='#e9c27c', width=2)
-    text(d, (48, 230), 'CAPTAIN OF THE CODE SEAS', 23, '#ffe5a1', bold=True)
-    text(d, (48, 292), 'Developer  •  AI Systems  •  Discord Bots', 17, '#f8f3e6')
-    text(d, (48, 321), 'Web & Creative Design', 17, '#f8f3e6')
+    draw = ImageDraw.Draw(base)
+    draw.rectangle((13, 13, 1186, 396), outline='#d2ae6d', width=2)
+    draw.line((33, 30, 128, 30), fill='#f2d08b', width=3)
+    text(draw, (52, 54), 'THE GRAND LINE  /  DEVELOPER PROFILE', 15, '#f4d99d', mono=True)
+    title_font = ImageFont.truetype('DejaVuSerif-Bold.ttf', 87)
+    draw.text((47, 103), 'KRISHNA', font=title_font, fill='#fff2d0', stroke_width=1, stroke_fill='#3d2617')
+    draw.line((54, 221, 519, 221), fill='#f2d08b', width=2)
+    text(draw, (52, 241), 'CAPTAIN OF THE CODE SEAS', 23, '#ffe5a1', bold=True)
+    text(draw, (53, 304), 'DEVELOPER  /  AI  /  DISCORD  /  WEB', 15, '#f8f3e6', mono=True)
+    text(draw, (53, 330), 'CREATIVE DESIGN  •  INDIA', 15, '#f8f3e6', mono=True)
     frames = []
     for frame in range(16):
         image = base.copy()
-        draw = ImageDraw.Draw(image)
+        d = ImageDraw.Draw(image)
         phase = frame / 16 * math.tau
-        for x, y, offset in [(75, 368, 0), (236, 365, 1.4), (454, 75, 2.6), (550, 355, 4.1)]:
+        for x, y, offset in [(75, 371, 0), (240, 372, 1.4), (454, 70, 2.6), (550, 355, 4.1)]:
             glow = 0.5 + 0.5 * math.sin(phase + offset)
             color = (int(140 + 100*glow), int(115 + 95*glow), int(70 + 85*glow))
-            draw.ellipse((x-2, y-2, x+2, y+2), fill=color)
+            d.ellipse((x-2, y-2, x+2, y+2), fill=color)
         frames.append(image)
     save_gif(frames, path, 160)
 
@@ -138,20 +141,20 @@ def svg_text(x, y, value, size=18, fill=WHITE, weight=400, extra=''):
 
 
 def activity_svg(data):
-    header = f'<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img"><title>Krishna public GitHub activity</title><rect width="1200" height="300" rx="18" fill="{BG}"/><g font-family="DejaVu Sans,Arial,sans-serif">'
+    header = f'<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img"><title>Krishna public GitHub activity</title><rect width="1200" height="300" rx="8" fill="{BG}"/><rect x="12" y="12" width="1176" height="276" rx="4" fill="none" stroke="#987d50"/><g font-family="DejaVu Sans,Arial,sans-serif">'
     if not data:
         return header + svg_text(40, 78, 'ACTIVITY / FIRST REFRESH PENDING', 18, MINT, 600) + svg_text(40, 139, 'Account data will appear after the first successful workflow run.', 22) + svg_text(40, 200, 'No sample metrics. No borrowed contribution history.', 17, MUTED) + '</g></svg>'
     repos = data['repositories']
     originals = [repo for repo in repos if not repo['isFork']]
     languages = Counter(repo['primaryLanguage']['name'] for repo in originals if repo['primaryLanguage'])
     total = data['calendar']['totalContributions']
-    parts = [header, svg_text(36, 41, 'WORLD GOVERNMENT / PUBLIC RECORD', 16, MINT, 600), svg_text(1164, 41, data['updated_at'], 13, MUTED, extra='text-anchor="end"')]
+    parts = [header, svg_text(38, 47, 'PUBLIC RECORD  /  GITHUB', 17, MINT, 600), svg_text(1161, 47, data['updated_at'], 14, MUTED, extra='text-anchor="end"')]
     metrics = [(len(repos), 'PUBLIC REPOSITORIES'), (sum(r['stargazerCount'] for r in repos), 'STARS ON OWNED REPOS'), (total, 'CONTRIBUTIONS / PAST YEAR')]
     for index, (number, label) in enumerate(metrics):
         left = 36 + index*385
-        parts += [f'<rect x="{left}" y="65" width="358" height="122" rx="12" fill="{PANEL}" stroke="{LINE}"/>', svg_text(left+20, 122, f'{number:,}', 42, WHITE, 700), svg_text(left+20, 157, label, 12, MUTED)]
-    parts.append(svg_text(36, 222, 'TOP REPOSITORY LANGUAGES / NON-FORKS', 12, MUTED, 600))
-    parts.append(svg_text(36, 259, '  /  '.join(f'{language} · {count}' for language, count in languages.most_common(5)) or 'No primary language data yet', 18, VIOLET))
+        parts += [f'<rect x="{left}" y="65" width="358" height="126" rx="4" fill="{PANEL}" stroke="#466366"/>', f'<path d="M{left+20} 82h56" stroke="{MINT}" stroke-width="2"/>', svg_text(left+20, 142, f'{number:,}', 48, WHITE, 700, extra='font-family="Georgia,serif"'), svg_text(left+20, 170, label, 13, MUTED, 600)]
+    parts.append(svg_text(38, 229, 'TOP REPOSITORY LANGUAGES / NON-FORKS', 13, MUTED, 600))
+    parts.append(svg_text(38, 261, '  /  '.join(f'{language} · {count}' for language, count in languages.most_common(5)) or 'No primary language data yet', 18, VIOLET))
     return ''.join(parts) + '</g></svg>'
 
 

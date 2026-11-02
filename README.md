@@ -13,21 +13,19 @@ BCA graduate · India
 
 ## Captain’s log
 
-<img src="assets/one-piece/harbor-divider.jpg" alt="A sunlit harbor with a Straw Hat ship and Krishna-inspired details." width="100%" />
-
-<div align="center"><img src="assets/one-piece/captain-map.png" alt="Krishna's pirate captain holding a treasure map." width="260" /></div>
+<img src="assets/one-piece/captains-log.jpg" alt="Krishna’s pirate captain with his map at a sunlit harbor: Ideas into adventures." width="100%" />
 
 I’m **Krishna**, a BCA graduate from India building AI-powered systems, Discord bots, websites and creative digital experiences. I enjoy connecting practical automation with thoughtful interfaces, and designing cinematic gaming thumbnails with attention to composition, lighting and character detail.
 
-My interests include programming, anime, gaming and AI integrations. Currently exploring AI orchestration, community tools and responsive web experiences.
+**On the map:** AI orchestration · community tools · responsive web experiences · cinematic visuals
 
 ## World Government bounty dashboard
 
-<div align="center"><img src="assets/one-piece/wanted-poster.jpg" alt="Decorative wanted poster of Krishna, with a fictional pirate bounty." width="340" /></div>
+<img src="assets/one-piece/public-record.jpg" alt="Krishna’s decorative wanted poster and the words The public record; the bounty is fictional." width="100%" />
 
 The bounty is **fictional**. The public GitHub figures below come from this account’s latest successful refresh. Repository language counts describe primary languages of owned non-fork repositories; they are not a measure of proficiency.
 
-<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=08fb94ad5b3a" alt="Public owned repositories, stars, contributions, repository languages and last successful refresh." width="100%" /></a>
+<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=4a0362be46f2" alt="Public owned repositories, stars, contributions, repository languages and last successful refresh." width="100%" /></a>
 
 <!-- ACTIVITY:START -->
 <sub>Last successful refresh: **2026-11-02 05:13 UTC** · hourly + profile updates · public data only</sub>
@@ -56,10 +54,17 @@ The bounty is **fictional**. The public GitHub figures below come from this acco
 
 <img src="assets/one-piece/project-fleet.jpg" alt="Three pirate ships on a golden ocean, representing Krishna's project fleet." width="100%" />
 
-- **[Rukiya](https://github.com/rukia3287-jpg/rukiya)** — AI chatbot with orchestration and Discord / YouTube Live functionality.
-- **[Lxeus](https://github.com/krishna3251/lexus_dc)** — Discord community bot with moderation, utilities and integrations.
-- **[Web experiments](https://github.com/krishna3251/krish_pport)** — responsive interfaces, animated websites and modern web development.
-- **[Server Builder](https://github.com/krishna3251/server-builder-bot)** — a Discord bot for building community setups.
+**01 / [RUKIYA ↗](https://github.com/rukia3287-jpg/rukiya)**<br />
+AI chatbot with orchestration and Discord / YouTube Live functionality.
+
+**02 / [LXEUS ↗](https://github.com/krishna3251/lexus_dc)**<br />
+Discord community bot with moderation, utilities and integrations.
+
+**03 / [WEB EXPERIMENTS ↗](https://github.com/krishna3251/krish_pport)**<br />
+Responsive interfaces, animated websites and modern web development.
+
+**04 / [SERVER BUILDER ↗](https://github.com/krishna3251/server-builder-bot)**<br />
+A Discord bot for building community setups.
 
 ## Grand line of contributions
 
