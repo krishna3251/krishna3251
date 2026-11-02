@@ -71,6 +71,9 @@ class DataTests(unittest.TestCase):
         self.assertNotIn('archived', output)
         self.assertNotIn(f'](https://github.com/{profile.USER}/{profile.USER})', output)
         self.assertIn('Latest push', output)
+        self.assertIn('**Public owned repositories:** 4', output)
+        self.assertIn('**Stars on owned repositories:** 8', output)
+        self.assertIn('**Contributions in GitHub\'s calendar period:** 7', output)
         self.assertIn(r'\[x\]', profile.markdown_label('[x]'))
         data['repositories'] = [repo('../unsafe')]
         with self.assertRaises(ValueError):

@@ -219,7 +219,10 @@ def markdown_label(value):
 
 def activity_markdown(data):
     repos = sorted((r for r in data['repositories'] if r['pushedAt'] and not r['isArchived'] and r['name'] != USER), key=lambda r:r['pushedAt'], reverse=True)[:4]
-    lines = [f"<sub>Last successful refresh: **{data['updated_at']}** · hourly + profile updates · public data only</sub>", '', '| Recently pushed repository | Latest push · UTC |', '| :--- | :--- |']
+    repos_total = len(data['repositories'])
+    stars_total = sum(r['stargazerCount'] for r in data['repositories'])
+    contributions_total = data['calendar']['totalContributions']
+    lines = [f"<sub>Last successful refresh: **{data['updated_at']}** · hourly + profile updates · public data only</sub>", '', f"**Public owned repositories:** {repos_total:,} · **Stars on owned repositories:** {stars_total:,} · **Contributions in GitHub's calendar period:** {contributions_total:,}", '', '| Recently pushed repository | Latest push · UTC |', '| :--- | :--- |']
     for repo in repos:
         # URLs are constructed from GitHub identifiers, not arbitrary API URLs.
         target = repo['nameWithOwner']

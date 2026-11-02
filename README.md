@@ -32,6 +32,8 @@ The bounty is **fictional**. The public GitHub figures below come from this acco
 <!-- ACTIVITY:START -->
 <sub>Last successful refresh: **2026-11-01 23:37 UTC** · hourly + profile updates · public data only</sub>
 
+**Public owned repositories:** 18 · **Stars on owned repositories:** 17 · **Contributions in GitHub's calendar period:** 901
+
 | Recently pushed repository | Latest push · UTC |
 | :--- | :--- |
 | [porfolio-test-33](https://github.com/krishna3251/porfolio-test-33) | 2026-11-01 · 18:57 |
