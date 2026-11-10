@@ -25,19 +25,19 @@ I’m **Krishna**, a BCA graduate from India building AI-powered systems, Discor
 
 The bounty is **fictional**. The public GitHub figures below come from this account’s latest successful refresh. Repository language counts describe primary languages of owned non-fork repositories; they are not a measure of proficiency.
 
-<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=687046d25bb1" alt="Public owned repositories, stars, contributions, repository languages and last successful refresh." width="100%" /></a>
+<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=c003b5d1316a" alt="Public owned repositories, stars, contributions, repository languages and last successful refresh." width="100%" /></a>
 
 <!-- ACTIVITY:START -->
-<sub>Last successful refresh: **2026-11-10 09:53 UTC** · hourly + profile updates · public data only</sub>
+<sub>Last successful refresh: **2026-11-10 17:52 UTC** · hourly + profile updates · public data only</sub>
 
-**Public owned repositories:** 18 · **Stars on owned repositories:** 17 · **Contributions in GitHub's calendar period:** 909
+**Public owned repositories:** 18 · **Stars on owned repositories:** 17 · **Contributions in GitHub's calendar period:** 910
 
 | Recently pushed repository | Latest push · UTC |
 | :--- | :--- |
+| [rule-34](https://github.com/krishna3251/rule-34) | 2026-11-10 · 17:41 |
 | [lexus\_dc](https://github.com/krishna3251/lexus_dc) | 2026-11-09 · 15:09 |
 | [porfolio-test-33](https://github.com/krishna3251/porfolio-test-33) | 2026-11-01 · 18:57 |
 | [fruty](https://github.com/krishna3251/fruty) | 2026-10-29 · 09:49 |
-| [sri-sai-nath-](https://github.com/krishna3251/sri-sai-nath-) | 2026-10-26 · 05:18 |
 
 **Primary languages across owned non-fork repositories:** Python: 6 · TypeScript: 6 · CSS: 3 · Dockerfile: 1
 <!-- ACTIVITY:END -->
@@ -68,7 +68,7 @@ A Discord bot for building community setups.
 
 ## Grand line of contributions
 
-<a href="https://github.com/krishna3251"><img src="assets/contributions.gif?v=41df732846c0" alt="Krishna's GitHub contribution calendar as an animated sea chart. Cell colors represent contribution counts; the moving outline is decorative." width="100%" /></a>
+<a href="https://github.com/krishna3251"><img src="assets/contributions.gif?v=a21d7e779c01" alt="Krishna's GitHub contribution calendar as an animated sea chart. Cell colors represent contribution counts; the moving outline is decorative." width="100%" /></a>
 
 The chart uses this account’s GitHub contribution calendar; the moving trail is decorative. The legend shows increasing activity, and the date range and total are printed on the chart. Data is refreshed hourly when the workflow succeeds.
 
