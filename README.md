@@ -25,10 +25,10 @@ I’m **Krishna**, a BCA graduate from India building AI-powered systems, Discor
 
 The bounty is **fictional**. The public GitHub figures below come from this account’s latest successful refresh. Repository language counts describe primary languages of owned non-fork repositories; they are not a measure of proficiency.
 
-<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=ef33c57d83ed" alt="Public owned repositories, stars, contributions, repository languages and last successful refresh." width="100%" /></a>
+<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=a6369878ad33" alt="Public owned repositories, stars, contributions, repository languages and last successful refresh." width="100%" /></a>
 
 <!-- ACTIVITY:START -->
-<sub>Last successful refresh: **2026-11-11 22:00 UTC** · hourly + profile updates · public data only</sub>
+<sub>Last successful refresh: **2026-11-12 03:02 UTC** · hourly + profile updates · public data only</sub>
 
 **Public owned repositories:** 18 · **Stars on owned repositories:** 17 · **Contributions in GitHub's calendar period:** 916
 
@@ -68,7 +68,7 @@ A Discord bot for building community setups.
 
 ## Grand line of contributions
 
-<a href="https://github.com/krishna3251"><img src="assets/contributions.gif?v=7d73e4b1c677" alt="Krishna's GitHub contribution calendar as an animated sea chart. Cell colors represent contribution counts; the moving outline is decorative." width="100%" /></a>
+<a href="https://github.com/krishna3251"><img src="assets/contributions.gif?v=c3849b9d9f31" alt="Krishna's GitHub contribution calendar as an animated sea chart. Cell colors represent contribution counts; the moving outline is decorative." width="100%" /></a>
 
 The chart uses this account’s GitHub contribution calendar; the moving trail is decorative. The legend shows increasing activity, and the date range and total are printed on the chart. Data is refreshed hourly when the workflow succeeds.
 
