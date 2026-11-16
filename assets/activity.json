@@ -2,6 +2,18 @@
   "login": "krishna3251",
   "repositories": [
     {
+      "name": "krishna3251",
+      "nameWithOwner": "krishna3251/krishna3251",
+      "url": "https://github.com/krishna3251/krishna3251",
+      "isFork": false,
+      "isArchived": false,
+      "stargazerCount": 0,
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-11-16T11:23:52Z"
+    },
+    {
       "name": "krishna3251.github.io",
       "nameWithOwner": "krishna3251/krishna3251.github.io",
       "url": "https://github.com/krishna3251/krishna3251.github.io",
@@ -22,18 +34,6 @@
         "name": "Python"
       },
       "pushedAt": "2026-11-16T04:49:19Z"
-    },
-    {
-      "name": "krishna3251",
-      "nameWithOwner": "krishna3251/krishna3251",
-      "url": "https://github.com/krishna3251/krishna3251",
-      "isFork": false,
-      "isArchived": false,
-      "stargazerCount": 0,
-      "primaryLanguage": {
-        "name": "Python"
-      },
-      "pushedAt": "2026-11-16T02:45:09Z"
     },
     {
       "name": "server-builder-bot",
@@ -2271,5 +2271,5 @@
       }
     ]
   },
-  "updated_at": "2026-11-16 11:23 UTC"
+  "updated_at": "2026-11-16 22:05 UTC"
 }
