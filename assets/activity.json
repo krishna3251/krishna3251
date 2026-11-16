@@ -2,16 +2,14 @@
   "login": "krishna3251",
   "repositories": [
     {
-      "name": "krishna3251",
-      "nameWithOwner": "krishna3251/krishna3251",
-      "url": "https://github.com/krishna3251/krishna3251",
+      "name": "krishna3251.github.io",
+      "nameWithOwner": "krishna3251/krishna3251.github.io",
+      "url": "https://github.com/krishna3251/krishna3251.github.io",
       "isFork": false,
       "isArchived": false,
       "stargazerCount": 0,
-      "primaryLanguage": {
-        "name": "Python"
-      },
-      "pushedAt": "2026-11-15T22:50:29Z"
+      "primaryLanguage": null,
+      "pushedAt": "2026-11-16T05:36:08Z"
     },
     {
       "name": "lexus_dc",
@@ -23,7 +21,19 @@
       "primaryLanguage": {
         "name": "Python"
       },
-      "pushedAt": "2026-11-14T17:52:23Z"
+      "pushedAt": "2026-11-16T04:49:19Z"
+    },
+    {
+      "name": "krishna3251",
+      "nameWithOwner": "krishna3251/krishna3251",
+      "url": "https://github.com/krishna3251/krishna3251",
+      "isFork": false,
+      "isArchived": false,
+      "stargazerCount": 0,
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-11-16T02:45:09Z"
     },
     {
       "name": "server-builder-bot",
@@ -215,7 +225,7 @@
     }
   ],
   "calendar": {
-    "totalContributions": 941,
+    "totalContributions": 954,
     "weeks": [
       {
         "contributionDays": [
@@ -2254,12 +2264,12 @@
           },
           {
             "date": "2026-11-16",
-            "contributionCount": 0,
+            "contributionCount": 13,
             "weekday": 1
           }
         ]
       }
     ]
   },
-  "updated_at": "2026-11-16 02:45 UTC"
+  "updated_at": "2026-11-16 11:23 UTC"
 }

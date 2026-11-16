@@ -25,19 +25,19 @@ I’m **Krishna**, a BCA graduate from India building AI-powered systems, Discor
 
 The bounty is **fictional**. The public GitHub figures below come from this account’s latest successful refresh. Repository language counts describe primary languages of owned non-fork repositories; they are not a measure of proficiency.
 
-<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=322939f711d1" alt="Public owned repositories, stars, contributions, repository languages and last successful refresh." width="100%" /></a>
+<a href="https://github.com/krishna3251?tab=repositories"><img src="assets/activity.svg?v=e103e35209d4" alt="Public owned repositories, stars, contributions, repository languages and last successful refresh." width="100%" /></a>
 
 <!-- ACTIVITY:START -->
-<sub>Last successful refresh: **2026-11-16 02:45 UTC** · hourly + profile updates · public data only</sub>
+<sub>Last successful refresh: **2026-11-16 11:23 UTC** · hourly + profile updates · public data only</sub>
 
-**Public owned repositories:** 18 · **Stars on owned repositories:** 17 · **Contributions in GitHub's calendar period:** 941
+**Public owned repositories:** 19 · **Stars on owned repositories:** 17 · **Contributions in GitHub's calendar period:** 954
 
 | Recently pushed repository | Latest push · UTC |
 | :--- | :--- |
-| [lexus\_dc](https://github.com/krishna3251/lexus_dc) | 2026-11-14 · 17:52 |
+| [krishna3251.github.io](https://github.com/krishna3251/krishna3251.github.io) | 2026-11-16 · 05:36 |
+| [lexus\_dc](https://github.com/krishna3251/lexus_dc) | 2026-11-16 · 04:49 |
 | [server-builder-bot](https://github.com/krishna3251/server-builder-bot) | 2026-11-13 · 04:00 |
 | [rule-34](https://github.com/krishna3251/rule-34) | 2026-11-10 · 18:34 |
-| [porfolio-test-33](https://github.com/krishna3251/porfolio-test-33) | 2026-11-01 · 18:57 |
 
 **Primary languages across owned non-fork repositories:** Python: 6 · TypeScript: 6 · CSS: 3 · Dockerfile: 1
 <!-- ACTIVITY:END -->
@@ -68,7 +68,7 @@ A Discord bot for building community setups.
 
 ## Grand line of contributions
 
-<a href="https://github.com/krishna3251"><img src="assets/contributions.gif?v=89a85cbed905" alt="Krishna's GitHub contribution calendar as an animated sea chart. Cell colors represent contribution counts; the moving outline is decorative." width="100%" /></a>
+<a href="https://github.com/krishna3251"><img src="assets/contributions.gif?v=d3c61e6d10d0" alt="Krishna's GitHub contribution calendar as an animated sea chart. Cell colors represent contribution counts; the moving outline is decorative." width="100%" /></a>
 
 The chart uses this account’s GitHub contribution calendar; the moving trail is decorative. The legend shows increasing activity, and the date range and total are printed on the chart. Data is refreshed hourly when the workflow succeeds.
 
